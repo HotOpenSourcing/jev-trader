@@ -14,10 +14,12 @@
     "@ai-sdk/typesafe-ai": "^3.0.0",
     "@kuru-labs/kuru-sdk": "^0.0.95",
     "ai": "^7.0.103",
-    "ethers": "5"
+    "dotenv": "^8.2.0",
+    "ethers": "5",
+    "node-fetch": "^3.3.2"
   },
   "scripts": {
-    "start": "bun run src/index.ts",
-    "dev": "bun --watch run src/index.ts"
+    "start": "node init && bun run src/index.ts",
+    "dev": "node init && bun --watch run src/index.ts"
   }
 }
